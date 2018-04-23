@@ -1,0 +1,52 @@
+{
+  "name": "kreel",
+  "version": "1.0.0",
+  "description": "A chat bot for GroupMe",
+  "main": "web.js",
+  "engines": {
+    "yarn": "1.5.1",
+    "node": "9.4.0"
+  },
+  "scripts": {
+    "start": "yarn run build && node .",
+    "test": "node src/web.js",
+    "build": "",
+    "lint": "node_modules/.bin/eslint .",
+    "fix": "node_modules/.bin/eslint . --fix"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2015,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "mongo": true,
+      "es6": true,
+      "jquery": true
+    }
+  },
+  "repository": "https://github.com/Spaceface16518/Kreel.git",
+  "author": "Spaceface16518 <33424649+Spaceface16518@users.noreply.github.com>",
+  "license": "MPL",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "mongodb-stitch": "^3.0.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "dotenv": "^5.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "fakefile": "^0.0.9"
+  }
+}
